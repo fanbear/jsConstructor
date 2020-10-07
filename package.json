@@ -1,0 +1,26 @@
+{
+  "name": "jsconstructor",
+  "version": "1.0.0",
+  "description": "javascript constructor",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel ./src/index.html -p 4200 --open",
+    "build": "parcel build ./src/index.html --no-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanbear/jsConstructor.git"
+  },
+  "author": "Yura Belyaev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fanbear/jsConstructor/issues"
+  },
+  "homepage": "https://github.com/fanbear/jsConstructor#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "style": "0.0.3"
+  }
+}
