@@ -1,17 +1,9 @@
 'use strict';
 
-import model from './model';
-import { templates} from './templates';
+import { model } from './model';
 import './styles/main.css';
+import { App } from './classes/app';
 
-const $site = document.querySelector('#site');
+new App(model).init();
 
-model.forEach(block => {
-    //передаем название ф-и в templates из model.type
-    // toHtml являеться ф-ей title(block)
-    const toHtml = templates[block.type];
 
-    if(toHtml) {
-        $site.insertAdjacentHTML('beforeend', toHtml(block));
-    }
-})
